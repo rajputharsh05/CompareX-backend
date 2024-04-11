@@ -17,7 +17,7 @@ async def handleLogin(request : Request):
 
         collection = connectDB();
         document = collection.find({"leetcodeID" : loginID})
-
+        
 
         for doc in document:
             password = doc["password"]
